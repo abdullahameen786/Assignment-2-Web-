@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Web</title>
+    
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/1ef7b86182.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./images/logo.png" alt="Business Logo">
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </nav>
+    </header>
+    <section class="video-section">
+        <video autoplay muted loop id="background-video">
+            <source src="./images/v1.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="video-overlay">
+            <h1>Welcome to HomeyPlanet</h1>
+            <p>Discover amazing experiences with us.</p>
+            <a href="#explore" class="cta-button">Explore Now</a>
+        </div>
+    </section>
+    
+
+    <section class="sec-head">
+        <div class="head-text">
+            <h1>Freedom on Wheels, Comfort at Home</h1>
+            <p>"Freedom on Wheels, Comfort at Home" embodies the perfect blend of adventure and coziness, offering the flexibility of life on the road with the warmth and comfort of a home.</p>
+            <a href="product.html" target="_blank"><button class="btn">Shop Now</button></a>
+        </div>
+        <div class="image-container">
+            <img src="./images/p8.jpg" alt="banner_pattern">
+        </div>
+    </section>
+    
+    <section class="sec-2 ">
+        <div class="sec-2div1">
+            <h3>Trending Items</h3>
+        </div>
+        <div class="sec-2div2 item">
+            <div class="items">
+                <img src="./images/p8.jpg" alt="1">
+                <h3>NomadNest – Perfect for travelers who want a cozy, mobile home</h3>
+                <p>From $5</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="items">
+                <img src="./images/p20.jpg" alt="2">
+                <h3>NomadNest – Perfect for travelers who want a cozy, mobile home</h3>
+                <p>From $5</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="items">
+                <img src="./images/p19.jpg" alt="3">
+                <h3>DriftAway – A van setup that lets you sleep and chill anywhere.</h3>
+                <p>From $5</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="items">
+                <img src="./images/p11.jpg" alt="4">
+                <h3>DriftAway – A van setup that lets you sleep and chill anywhere.</h3>
+                <p>From $5</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="items">
+                <img src="./images/p14.jpg" alt="5">
+                <h3>DriftAway – A van setup that lets you sleep and chill anywhere.</h3>
+                <p>From $5</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="items">
+                <img src="./images/p16.jpg" alt="6">
+                <h3>DriftAway – A van setup that lets you sleep and chill anywhere.</h3>
+                <p>From $5</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-3" class="quote-section">
+        <div class="quote-container">
+          <div class="quote-icon">&#8220;</div>
+          <p class="quote-text">
+            "Designed for life on the road, this van comes equipped with a cozy bed and a built-in fridge, ensuring you always have a restful sleep and fresh food wherever your journey takes you."
+          </p>
+          <p class="quote-author">- Micky Mouse</p>
+        </div>
+      </section>
+
+    <section class="sec-head reverse">
+        <div class="head-text">
+            <h1>Adventure Awaits, Comfort Sustains</h1>
+            <p>Experience the best of both worlds – thrilling journeys with the warmth of home. Your adventure begins here.</p>
+            <a href="product.html" target="_blank"><button class="btn">Discover More</button></a>
+        </div>
+        <div class="image-container">
+            <img src="./images/p7.jpg" alt="Adventure Image">
+        </div>
+    </section>
+    <section class="sec-4 ">
+        <div class="sec-4-div1">
+            <h2>Credibly innovate granular internal or organic sources whereas standards.</h2>
+            <p>Designed for life on the road, this van comes equipped with a cozy bed and a built-in fridge, ensuring you always have a restful sleep and fresh food wherever your journey takes you.</p>
+        </div>
+        <div class="sec-4-div2">
+            <div class="dis_flex js align">
+                <i class="fa-regular fa-credit-card far"></i>
+                <p>Credit Card Support</p>
+            </div>
+            <div class="dis_flex js align">
+                <i class="fas fa-tv far"></i>
+                <p>Online Order</p>
+            </div>
+            <div class="dis_flex js align">
+                <i class="fa-solid fa-truck-fast far"></i>
+                <p>Fast Delivery</p>
+            </div>
+            <div class="dis_flex js align">
+                <i class="fa-solid fa-bag-shopping far"></i>
+                <p>Product with Gifts</p>
+            </div>
+        </div>
+    </section>
+    <section class="sec-5 ">
+        <div class="sec-5div">
+            <h2>Get promotions & updates!</h2>
+            <p>Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources
+                credibly innovate granular internal .</p>
+            <div class="sec-5btn ">
+                <input type="email" placeholder="Enter your email">
+                <button>Submit </button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <footer>
+            <div class="footer-container">
+                <nav class="footer-nav">
+                    <div class="logo">Homeyplant</div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <span><i class="fa-brands fa-facebook"></i></span>
+                        <span><i class="fa-brands fa-google-plus-g"></i></span>
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                        <span><i class="fa-brands fa-linkedin-in"></i></span>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+        
+        <div class="footer-bottom flex-center">
+            <p>Copyright &copy; 2025 All rights reserved | Made by Abdullah</p>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+    "products": [
+      {
+        "title": "NomadNest – Cozy mobile home",
+        "price": "5",
+        "image": "./images/p8.jpg"
+      },
+      {
+        "title": "DriftAway – Sleep and chill anywhere",
+        "price": "5",
+        "image": "./images/p19.jpg"
+      },
+      {
+        "title": "AdventureVan – For ultimate explorers",
+        "price": "7",
+        "image": "./images/p14.jpg"
+      }
+    ]
+  }
+  

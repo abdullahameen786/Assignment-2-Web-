@@ -1,0 +1,607 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 15px 30px;
+    position: relative;
+}
+
+/* Logo */
+nav img {
+    height: 60px; /* Adjust as needed */
+}
+
+/* Menu styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #a87ffb; /* Adjust to fit your theme */
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff00ff; /* Highlight effect */
+}
+
+/* Icons */
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icons i {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.icons i:hover {
+    color: #a87ffb;
+}
+
+/* Toggle button (hidden by default) */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Mobile & Tablet View */
+@media screen and (max-width: 1024px) {
+    .menu-toggle {
+        display: block; /* Show toggle button */
+    }
+
+    nav ul {
+        display: none; /* Hide menu initially */
+        flex-direction: column;
+        background: black;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    /* Show menu when toggled */
+    #menu.active {
+        display: flex;
+    }
+}
+
+/* Video Section */
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background Video */
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(8px); /* Adds the blur effect */
+}
+
+/* Overlay Content */
+.video-overlay {
+    position: absolute;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    backdrop-filter: blur(5px); /* Slight blur for better readability */
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Heading */
+.video-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #a87ffb;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #ff00ff;
+}
+
+
+        /* Section Styling */
+        .sec-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 10%;
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            position: relative;
+        }
+        .sec-head .head-text {
+            flex: 1;
+            text-align: left;
+            padding-right: 30px;
+        }
+        .sec-head h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .sec-head p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        .sec-head .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s ease-in-out;
+        }
+        .sec-head .btn:hover {
+            background-color: #0056b3;
+        }
+        .sec-head .image-container {
+            flex: 1;
+            text-align: right;
+        }
+        .sec-head img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Responsive Styling */
+        @media screen and (max-width: 768px) {
+            .sec-head {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 15px;
+            }
+            .sec-head .head-text {
+                text-align: center;
+                padding: 0;
+            }
+            .sec-head h1 {
+                font-size: 28px;
+            }
+            .sec-head p {
+                font-size: 16px;
+            }
+            .sec-head .btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+            .sec-head .image-container {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .sec-head img {
+                max-width: 320px;
+            }
+        }
+        /* Adjust spacing for sections */
+.sec-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    position: relative;
+    gap: 50px; /* Add space between image and text */
+}
+/* Section 2 Styling */
+.sec-2 {
+    padding: 60px 10%;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.sec-2div1 h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Grid layout for items */
+.sec-2div2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.items {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.items img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.items h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.items p {
+    font-size: 16px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+.items:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .sec-2 {
+        padding: 40px 5%;
+    }
+
+    .sec-2div1 h3 {
+        font-size: 24px;
+    }
+
+    .sec-2div2 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .items {
+        padding: 15px;
+    }
+
+    .items h3 {
+        font-size: 16px;
+    }
+
+    .items p {
+        font-size: 14px;
+    }
+}
+/* Styling for the "Buy Now" Button */
+.items button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.items button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .items button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+
+  .quote-section {
+    background-color: #AB89A3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .quote-container {
+    max-width: 700px;
+    color: white;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    position: relative;
+  }
+
+  .quote-icon {
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: -10px;
+  }
+
+  .quote-text {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .quote-author {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+/* Section 4 Styling */
+.sec-4 {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Styling for Heading and Text */
+.sec-4-div1 h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 70px;
+}
+
+.sec-4-div1 p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 70px;
+    line-height: 1.5;
+}
+
+/* Flexbox Layout for Feature Boxes */
+.sec-4-div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;  /* Space between items */
+    flex-wrap: wrap;  /* Allows wrapping on small screens */
+}
+
+/* Individual Feature Box Styling */
+.dis_flex {
+    width: 200px;  /* Fixed width */
+    height: 150px;  /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Center content vertically */
+    align-items: center;  /* Center content horizontally */
+    border: 2px solid #4b2354; /* Dark purple border */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.dis_flex:hover {
+    background-color: #4b2354;
+    color: white;
+}
+
+/* Icon Styling */
+.dis_flex i {
+    font-size: 40px;
+    color: #4b2354;
+    margin-bottom: 10px;
+}
+
+.dis_flex:hover i {
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sec-4-div2 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .dis_flex {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+ 
+/* Section 5 Styling */
+.sec-5 {
+    background-color: #402940; /* Dark purple background */
+    text-align: center;
+    padding: 80px 20px; /* Increased padding for better spacing */
+    color: white;
+}
+
+/* Inner div */
+.sec-5div {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px; /* Added padding for better spacing */
+}
+
+/* Heading */
+.sec-5div h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 70px; /* Increased spacing below heading */
+}
+
+/* Paragraph */
+.sec-5div p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-bottom: 70px; /* Added more spacing below description */
+}
+
+/* Button container */
+.sec-5btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Increased spacing between input and button */
+    margin-top: 30px; /* More spacing from description */
+}
+
+/* Input Field */
+.sec-5btn input[type="email"] {
+    width: 370px;
+    padding: 16px 18px;
+    border: 2px solid white;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    outline: none;
+}
+
+.sec-5btn input[type="email"]::placeholder {
+    color: white;
+    opacity: 0.6;
+}
+
+/* Subscribe Button */
+.sec-5btn button {
+    background-color: #c39bc8;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.sec-5btn button:hover {
+    background-color: #a47da5;
+}
+
+/* Footer Styling */
+/* Footer Styling */
+footer {
+    padding: 0px 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+.footer-container {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-nav {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2d132c;
+    margin-right: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #2d132c;
+    font-weight: 500;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.social-icons span {
+    background-color: #b28da0;
+    padding: 10px;
+    border-radius: 50%;
+    color: #2d132c;
+    font-size: 18px;
+}
+
+
+.footer-bottom {
+   
+    background-color: #a27c98;
+    padding: 20px;
+    color: #fff;
+}
